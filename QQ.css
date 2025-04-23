@@ -1,0 +1,45 @@
+body{
+    margin: 0;
+    padding: 0;
+    background-color: bisque;
+}
+nav{
+    background:khaki;
+    height:700px;
+    grid-area: nav;
+   
+}
+header{
+    background: #35424a;
+    height: 100px;
+    grid-area: header;
+    
+}
+aside{
+    background:gold;
+    height: 100px;
+    grid-area: aside;
+    
+}
+section{
+    background:olive;
+    height: 800px;
+    grid-area: section;
+    
+}
+footer{
+    background:green;
+    height:100px;
+    grid-area:footer;
+   
+}
+#f{
+    height: auto;
+    width: auto;
+    display: grid;
+    grid-template-columns: 1fr 800px 1fr;
+    grid-template-areas: 
+    "nav header aside"
+    "nav section aside"
+    "footer footer footer" ;
+}
